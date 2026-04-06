@@ -88,7 +88,7 @@ func main() {
 	}
 
 	// Generate single watermark
-	output := fmt.Sprintf("%dx%d.png", *width, *height)
+	output := fmt.Sprintf("%s-%dx%d.png", *text, *width, *height)
 	cfg := WatermarkConfig{
 		Text:     *text,
 		Width:    *width,
